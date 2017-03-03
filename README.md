@@ -185,7 +185,7 @@ By the same token, you can make the "start" event fire when the top of the post�
 
 ![image alt text](/readme_images/image_8.png?raw=true)
 
-Because I attach the GAReadingTime code to the *div.article_container* element and fire the "start" and “finish” events when the *h2.article_title* and *hr.end-bar* enter the viewports, respectively, I use change the set up code to the following:
+Because I attach the GAReadingTime code to the *div.article_container* element and fire the "start" and “finish” events when the *h2.article_title* and *hr.end-bar* enter the viewports, respectively, I change the set up code to the following:
 
     $('div.article_container').GAReadingTime({
 	    targetStart		:	'h2.article_title',
