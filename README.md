@@ -40,7 +40,7 @@ To view the reading information go to your Google Analytics view and select Beha
 
 With the default settings, the [Event Category](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventCategory) for all our reading time events will be "Content Viewing" so click on that category as shown in green above.
 
-With the default setting the two [Event Actions](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventAction) are "start" and “finish”. By default the “start” event fires when the page finish loading and the “finish” action fires when the user scrolls to the bottom of the page. 
+With the default setting the two [Event Actions](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventAction) are "start" and “finish”. By default the “start” event fires when the page finishes loading and the “finish” action fires when the user scrolls to the bottom of the page. 
 
 We can see in the Total Events columns of my Google Analytics screenshot below that the "start" event fired 99 times and the “finish” event fired 73 times. So we can say 99 users started reading one of my blog posts and 73 users finished.
 
