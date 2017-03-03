@@ -8,7 +8,15 @@ Google Analytics Reading Time is a jQuery plugin for blogs and other content-dri
 This plugin is particularly helpful if you want to see in Google Analytics how many users actually finish reading a post, what the average reading time is for a given post, and the percentage of users that finish reading a post.
 
 ##**Table of Contents**
-<div class="toc"></div>
+* [<strong>Google Analytics Reading Time</strong>](#google-analytics-reading-time)
+      * [<strong>Table of Contents</strong>](#table-of-contents)
+      * [<strong>Dependencies</strong>](#dependencies)
+      * [<strong>Setup</strong>](#setup)
+      * [<strong>Google Analytics Results</strong>](#google-analytics-results)
+      * [<strong>Plugin Options</strong>](#plugin-options)
+      * [<strong>Explanations of Options</strong>](#explanations-of-options)
+      * [<strong>Helpful Tools</strong>](#helpful-tools)
+
 
 ## **Dependencies**
 You must have Google Analytics Universal set up on your site.
