@@ -20,6 +20,7 @@ This plugin is particularly helpful if you want to see in Google Analytics how m
 
 ## **Dependencies**
 You must have Google Analytics Universal set up on your site.
+
 jQuery is required.
 
 ## **Setup**
