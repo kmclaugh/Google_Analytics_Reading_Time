@@ -47,7 +47,7 @@ We can see in the Total Events columns of my Google Analytics screenshot below t
 
 ![image alt text](/readme_images/image_1.png?raw=true)
 
-While the number of readers who start and finish posts is valuable, the real benefit of Google Analytics Reading Time is that we track how long it took users to finish reading a post. In the script, when the "finish" event fires it calculates the amount of time, in seconds, since the “start” event fired and sends this as the [Event Value](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventValue) to Google Analytics. So in the Google Analytics screenshot below the Avg. Value for the “finish” event is the average amount of time each user spent reading one of my blog posts.
+While the number of readers who start and finish posts is valuable, the real benefit of Google Analytics Reading Time is that we can track how long it took users to finish reading a post. In the script, when the "finish" event fires it calculates the amount of time, in seconds, since the “start” event fired and sends this as the [Event Value](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventValue) to Google Analytics. So in the Google Analytics screenshot below the Avg. Value for the “finish” event is the average amount of time each user spent reading one of my blog posts.
 
 ![image alt text](/readme_images/image_2.png?raw=true)
 
@@ -165,7 +165,7 @@ You would change the setup code to the following
 	    eventFinishAction	:	"finish reading",
 	    eventLabel		:	"Blog Post",
     });
-With the default setup, the plugin fires the "start" event whenever the top of the HTML body element eventers the viewport, usually after the page loads. It fires the “finish” event whenever the bottom of the HTML body tag enters the viewport, usually after the user has scrolled to the bottom of the page. However, these are not always the best places to fire the “start” and “finish” events. If that’s the case on your site, you have a number of options.
+With the default setup, the plugin fires the "start" event whenever the top of the HTML body element enters the viewport, usually after the page loads. It fires the “finish” event whenever the bottom of the HTML body tag enters the viewport, usually after the user has scrolled to the bottom of the page. However, these are not always the best places to fire the “start” and “finish” events. If that’s the case on your site, you have a number of options.
 
 First, you could attach the GAReadingTime code to an element other than the HTML body tag. For instance, on my blog the content of each post is contained in a div block with the class "article_container" so I attach the GAReadingTime code this div block instead of the body tag like so:
 
