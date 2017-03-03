@@ -195,36 +195,3 @@ Because I attach the GAReadingTime code to the *div.article_container* element a
 Use the [Google Analytics Debugger Chrome Extension ](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna?utm_source=github.com/kmclaugh)to debug your plugin implementation. You can see how the plugin works on my site [countingcalculi.com ](http://countingcalculi.com/features/smart_hiring/?utm_source=github.com&utm_medium=Google_Analytics_Reading_Time_Instructions)by turning on the extension and reading the output in the Inspect Element console like so:
 
 ![image alt text](/readme_images/image_9.png?raw=true)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1
-
