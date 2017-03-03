@@ -28,7 +28,7 @@ With just the basic setup with default options shown above, you will see the fol
 
 To view the reading information go to your Google Analytics view and select Behavior, Events and Top Events like so:
 
- ![image alt text](image_0.png?raw=true)
+ ![image alt text](/readme_images/image_0.png?raw=true)
 
 With the default settings, the [Event Category](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventCategory) for all our reading time events will be "Content Viewing" so click on that category as shown in green above.
 
@@ -36,19 +36,19 @@ With the default setting the two [Event Actions](https://developers.google.com/a
 
 We can see in the Total Events columns of my Google Analytics screenshot below that the "start" event fired 99 times and the “finish” event fired 73 times. So we can say 99 users started reading one of my blog posts and 73 users finished.
 
-![image alt text](readme_images/image_1.png?raw=true)
+![image alt text](/readme_images/image_1.png?raw=true)
 
 While the number of readers who start and finish posts is valuable, the real benefit of Google Analytics Reading Time is that we track how long it took users to finish reading a post. In the script, when the "finish" event fires it calculates the amount of time, in seconds, since the “start” event fired and sends this as the [Event Value](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventValue) to Google Analytics. So in the Google Analytics screenshot below the Avg. Value for the “finish” event is the average amount of time each user spent reading one of my blog posts.
 
-![image alt text](readme_images/image_2.png?raw=true)
+![image alt text](/readme_images/image_2.png?raw=true)
 
 Now the above screenshot shows the average reading time for all my posts as 325.37 seconds or about 5 and half minutes. If I want to see the average reading time for each my blog posts individually, I can select the "Page Title" as the Secondary Dimension like so:
 
-![image alt text](readme_images/image_3.png?raw=true)
+![image alt text](/readme_images/image_3.png?raw=true)
 
 Then I can see the average reading time for each blog post individually.
 
-![image alt text](readme_images/image_4.png?raw=true)
+![image alt text](/readme_images/image_4.png?raw=true)
 
 These are only the most basic things you can do with Google Analytics once you add the Google Analytics Reading Time plugin to your site. If you want to get the most out of the plugin, we suggest making [Custom Reports](https://support.google.com/analytics/answer/1151300?hl=en).
 
@@ -160,21 +160,21 @@ With the default setup, the plugin fires the "start" event whenever the top of t
 
 First, you could attach the GAReadingTime code to an element other than the HTML body tag. For instance, on my blog the content of each post is contained in a div block with the class "article_container" so I attach the GAReadingTime code this div block instead of the body tag like so:
 
-![image alt text](readme_images/image_5.png?raw=true)
+![image alt text](/readme_images/image_5.png?raw=true)
 
     $('.article_container').GAReadingTime({});
 
 You can also make the "start" and “finish” events fire on separate elements. For instance, on my blog, I list a lot of references at the end of each post. Sometimes the references get quite long, so the user might not actually scroll to the bottom of the post’s container.
 
-![image alt text](readme_images/image_6.png?raw=true)
+![image alt text](/readme_images/image_6.png?raw=true)
 
 So instead of waiting till the user scrolls to the end of my post’s container (*div.article_container* in my case) I make the event fire when the bottom of the *hr.end-bar* element enters the viewport by setting the option targetFinish = ‘.end-bar’
 
-![image alt text](readme_images/image_7.png?raw=true)
+![image alt text](/readme_images/image_7.png?raw=true)
 
 By the same token, you can make the "start" event fire when the top of the post’s title enters the viewport by setting the option targetStart = ‘h2.article_title’
 
-![image alt text](readme_images/image_8.png?raw=true)
+![image alt text](/readme_images/image_8.png?raw=true)
 
 Because I attach the GAReadingTime code to the *div.article_container* element and fire the "start" and “finish” events when the *h2.article_title* and *hr.end-bar* enter the viewports, respectively, I use change the set up code to the following:
 
@@ -186,7 +186,7 @@ Because I attach the GAReadingTime code to the *div.article_container* element a
 ##**Helpful Tools**
 Use the [Google Analytics Debugger Chrome Extension ](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna?utm_source=github.com/kmclaugh)to debug your plugin implementation. You can see how the plugin works on my site [countingcalculi.com ](http://countingcalculi.com/features/smart_hiring/?utm_source=github.com&utm_medium=Google_Analytics_Reading_Time_Instructions)by turning on the extension and reading the output in the Inspect Element console like so:
 
-![image alt text](readme_images/image_9.png?raw=true)
+![image alt text](/readme_images/image_9.png?raw=true)
 
 
 
